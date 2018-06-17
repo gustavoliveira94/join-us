@@ -1,0 +1,25 @@
+{
+  "name": "join-us",
+  "version": "1.0.0",
+  "description": "Teste Front End Junior",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoliveira94/join-us.git"
+  },
+  "author": "Gustavo Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoliveira94/join-us/issues"
+  },
+  "homepage": "https://github.com/gustavoliveira94/join-us#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

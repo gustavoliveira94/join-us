@@ -1,0 +1,71 @@
+.header {
+    width: 100%;
+    height: 145px;
+
+    &__logo{
+        width: 100%;
+        height: 86px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__menu{
+        width: 90%;
+        padding: 0 5% 0 5%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $border;
+        border-top: 1px solid $border;
+
+        & ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        & ul li {
+            list-style: none;
+        }
+
+        & ul li a {
+            color: $color-header;
+            text-decoration: none;
+        }
+    }
+
+    &__menu--login{
+        font-family: $opensans;
+        width: $width-ul;
+    }
+
+    &__menu--options{
+        min-width: 400px;
+        width: $width-ul;
+        margin: 0 5% 0 5%;
+    }
+
+    &__menu--finder{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: $width-ul;
+
+        & li:first-of-type{
+            border-bottom: 1px solid $border;
+        }
+
+        & li div img {
+            width: 21px;
+            height: 21px;
+        }
+
+        & li div input{
+            border: 0;
+            height: 36px;
+            min-width: 85px;
+        }
+    }
+}
