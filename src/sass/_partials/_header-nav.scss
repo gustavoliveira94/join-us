@@ -11,23 +11,20 @@
     }
 
     &__menu{
+        @include flex(flex, space-between, center);
         width: 90%;
         padding: 0 5% 0 5%;
         height: 50px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         border-bottom: 1px solid $border;
         border-top: 1px solid $border;
 
         & ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex(flex, space-between, center);
         }
 
         & ul li {
             list-style: none;
+            line-height: $line-height;
         }
 
         & ul li a {
@@ -39,21 +36,24 @@
     &__menu--login{
         font-family: $opensans;
         width: $width-ul;
+        font-size: $one-two;
     }
 
     &__menu--options{
         min-width: 400px;
         width: $width-ul;
         margin: 0 5% 0 5%;
+        font-size: $one-four;
+        font-family: $opensans;
     }
 
     &__menu--finder{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: $width-ul;
+        font-size: $one-two;
+        font-family: $opensans;
 
         & li:first-of-type{
+            margin-right: 10px;
             border-bottom: 1px solid $border;
         }
 
@@ -65,7 +65,11 @@
         & li div input{
             border: 0;
             height: 36px;
-            min-width: 85px;
+            padding: 0 5px 0 5px;
+        }
+
+        & li div input::placeholder{
+            text-align: center;
         }
     }
 }
